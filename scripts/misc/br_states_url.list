@@ -1,0 +1,36 @@
+# mt
+url_base = "https://www.wunderground.com/history/daily/br/cuiab%C3%A1/SBCY/date/"
+# df
+url_base = "https://www.wunderground.com/history/daily/br/bras%C3%ADlia/SBBR/date/"
+# ce
+url_base = "https://www.wunderground.com/history/daily/br/fortaleza/SBFZ/date/"
+# am
+url_base = "https://www.wunderground.com/history/daily/br/manaus/SBEG/date/"
+# al
+url_base = "https://www.wunderground.com/history/daily/br/maceió/SBMO/date/"
+# pb
+url_base = "https://www.wunderground.com/history/daily/br/jo%C3%A3o-pessoa/SBJP/date/"
+# ma
+url_base = "https://www.wunderground.com/history/daily/br/s%C3%A3o-lu%C3%ADs/SBSL/date/"
+# mg
+url_base = "https://www.wunderground.com/history/daily/br/belo-horizonte/SBBH/date/"
+# pa
+url_base = "https://www.wunderground.com/history/daily/br/bel%C3%A9m/SBBE/date/"
+# pr
+url_base = "https://www.wunderground.com/history/daily/br/curitiba/SBCT/date/"
+# pe
+url_base = "https://www.wunderground.com/history/daily/br/recife/SBRF/date/"
+# rj
+url_base = "https://www.wunderground.com/history/daily/br/rio-de-janeiro/SBRJ/date/"
+# rs
+url_base = "https://www.wunderground.com/history/daily/br/porto-alegre/SBPA/date/"
+# sc
+url_base = "https://www.wunderground.com/history/daily/br/florian%C3%B3polis/SBFL/date/"
+# se
+url_base = "https://www.wunderground.com/history/daily/br/aracaju/SBAR/date/"
+# rn
+url_base = "https://www.wunderground.com/history/daily/br/natal/SBJP/date/"
+# ba
+url_base = "https://www.wunderground.com/history/daily/br/salvador/SBSV/date/"
+# sp
+url_base = "https://www.wunderground.com/history/daily/br/s%C3%A3o-paulo/SBSP/date/"
