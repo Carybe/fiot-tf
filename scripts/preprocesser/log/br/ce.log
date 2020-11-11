@@ -1,0 +1,5 @@
+In the first data clean, 1.02% of the datapoints were dropped
+Using Condition feature for has_rain definition
+It rains 4.86% of the time in the original dataset
+In the second data clean, 46.99% of the datapoints were dropped
+It rains 11.72% of the time in cleaned/preprocessed dataset

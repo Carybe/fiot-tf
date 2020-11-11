@@ -167,5 +167,4 @@ rain_ratio = df6hp[df6hp['has_rain'] == True]['has_rain'].count() / df6hp['has_r
 print('It rains %.2f%% of the time in cleaned/preprocessed dataset' %(100*rain_ratio))
 
 # Export the enhaced dataset
-df6hp.to_csv(r'%s.csv' % (dataset_output_path))
-df6hp_old.to_csv(r'%s_old.csv' % (dataset_output_path))
+df6hp.to_csv(dataset_output_path)
