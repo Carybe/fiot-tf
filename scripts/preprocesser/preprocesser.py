@@ -12,8 +12,6 @@ if len(args) != 3:
 	print("This script takes an input csv file and an output preprocessed output file as arguments (in order)")
 	exit(1)
 
-
-
 dataset_input_path = args[1]
 dataset_output_path = args[2]
 
@@ -123,8 +121,6 @@ df6hp.columns = ["_".join(x) for x in df6hp.columns.ravel()]
 df6hp['has_rain'] = df6hp['has_rain_max']
 df6hp.dtypes
 
-n = 4
-
 # Data enhancing
 # For each feature and "lambda" feature, group the last 8 measurements,
 # by shifting its data: Feature_steady_(N) = Feature_steady_(N-1).shift()
@@ -133,13 +129,13 @@ for feature in ['Pressure', 'Temperature', 'Humidity', 'Precip.']:
   df6hp['%s_steady_1' % (feature)] = df6hp['%s_mean' % (feature)].shift()
   df6hp['%s_min_steady_1' % (feature)] = df6hp['%s_min' % (feature)].shift()
   df6hp['%s_max_steady_1' % (feature)] = df6hp['%s_max' % (feature)].shift()
-  for i in range(n):
+  for i in range(7):
     df6hp['%s_steady_%d' % (feature, i+2)] = df6hp['%s_steady_%d' % (feature, i+1)].shift()
     df6hp['%s_min_steady_%d' % (feature, i+2)] = df6hp['%s_min_steady_%d' % (feature, i+1)].shift()
     df6hp['%s_max_steady_%d' % (feature, i+2)] = df6hp['%s_max_steady_%d' % (feature, i+1)].shift()
   for j in range(7):
     df6hp['%s_<lambda_%d>_1' % (feature, j)] = df6hp['%s_<lambda_%d>' % (feature, j)].shift()
-    for i in range(n):
+    for i in range(7):
       df6hp['%s_<lambda_%d>_%d' % (feature, j, i+2)] = df6hp['%s_<lambda_%d>_%d' % (feature, j, i+1)].shift()
 
 
